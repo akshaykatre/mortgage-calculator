@@ -1,0 +1,51 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-color: #f5f5f5; /* Light grey background */
+    font-family: Arial, sans-serif;
+}
+
+/* Tabs container */
+header {
+    background-color: transparent;
+    text-align: center;
+}
+
+/* Tab styling */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #ddd; /* Dark grey background */
+    color: #333; /* Dark grey font */
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Active tab styling */
+nav ul li.active a {
+    background-color: #007bff; /* Blue background for active tab */
+    color: #fff; /* White font for active tab */
+}
+
+/* Content section styling */
+main section {
+    display: none;
+    padding: 20px;
+    background-color: #fff; /* White background for content sections */
+    border-radius: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mortgage Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.0.2/chartjs-plugin-annotation.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#compare">Compare two mortgages</a></li>
+                <li><a href="#affordability">Mortgage affordability</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="compare">
+            <!-- Content for Compare two mortgages tab -->
+        </section>
+<!-- ... (previous HTML code) ... -->
+<section id="affordability">
+    <!-- Content for Mortgage affordability tab -->
+    <div class="affordability-content">
+        <h2>Mortgage Affordability</h2>
+        <label for="monthly-affordability">Monthly Mortgage Affordability:</label>
+        <input type="number" id="monthly-affordability" min="1" value="1000">
+        <br>
+        <div class="scrollbar-container">
+            <input type="range" id="affordability-slider" min="1" max="10000" value="1000">
+        </div>
+        <div class="mortgage-calculator">
+            <!-- <h3>Mortgage Calculator</h3>
+            <p>Estimate your maximum mortgage amount:</p>
+            <label for="estimated-mortgage">Estimated Mortgage Amount:</label>
+            <input type="text" id="estimated-mortgage" readonly>
+            <button id="calculate-button">Calculate</button> -->
+            <h3>Mortgage Calculator</h3>
+            <p id="estimated-mortgage">Estimated Mortgage Amount: $0.00</p>
+            <canvas id="affordability-chart" width="1200" height="600"></canvas>
+
+        </div>
+    </div>
+</section>
+<!-- ... (remaining HTML code) ... -->
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
